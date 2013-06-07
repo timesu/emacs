@@ -4,11 +4,15 @@
 (setq show-paren-delay 0 ) 
 ;;;show-paren-style 'parenthesis)  
 (show-paren-mode 1)  
+(setq show-paren-style 'parentheses)
 ;;; This is the binary name of my scheme implementation  
 (setq scheme-program-name "scm")  
 ;;
 ;; 设置默认tab宽度为2
 (setq tab-width 2 indent-tabs-mode t c-basic-offset 2)
+
+(setq column-number-mode t) 
+
 
 ;; MIT scheme
 (setq scheme-program-name
@@ -49,3 +53,15 @@
 (global-set-key [f12] 'semantic-ia-fast-jump)
 
 (load-file "~/.emacs.d/sanityinc-solarized-dark-theme.el")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40"))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
